@@ -1,0 +1,228 @@
+.services-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-family: 'Cinzel', serif;
+  color: #222;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'Questrial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grilla de tarjetas */
+.services-grid-icon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Cada tarjeta */
+.service-icon-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.service-icon-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icono */
+.service-icon-wrapper {
+  color: #111;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título */
+.service-icon-title {
+  font-size: 1.3rem;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Descripción */
+.service-icon-description {
+  font-size: 0.95rem;
+  font-family: 'Questrial', sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botón */
+.see-more-button {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  font-family: 'Cinzel', serif;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.modal-description {
+  font-family: 'Questrial', sans-serif;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Modal Glassmorphism */
+.modal-content.glass {
+  background: #fff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Swiper dots */
+.swiper-pagination-bullet {
+  background: #bbb;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* Grid Card inside Swiper */
+.service-icon-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-icon-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon-wrapper {
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.service-icon-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.service-icon-description {
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.see-more-button {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-family: 'Cinzel', serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #000;
+  color: #fff;
+}
