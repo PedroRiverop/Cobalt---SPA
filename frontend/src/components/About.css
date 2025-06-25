@@ -1,22 +1,23 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Questrial&display=swap');
 
-.about-section {
+.aboutIntro-section {
   position: relative;
-  background: #fff;
+  background: #111;
   padding: 6rem 2rem;
   overflow: hidden;
+  color: #fff;
 }
 
-.about-overlay {
+.aboutIntro-overlay {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
 }
 
-.about-content {
+.aboutIntro-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,49 +28,60 @@
   animation: fadeSlideIn 1.2s ease-out 0.3s forwards;
 }
 
-.about-text {
+.aboutIntro-text {
   max-width: 600px;
   text-align: left;
-  font-family: 'Questrial', sans-serif;
-  color: #444;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #ccc;
 }
 
-.about-title {
-  font-family: 'Cinzel', serif;
-  font-size: 2.4rem;
+.aboutIntro-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #111;
+  color: #fff;
   letter-spacing: 1px;
 }
 
-.about-paragraph {
+.aboutIntro-paragraph {
   font-size: 1.1rem;
-  line-height: 1.7;
-  color: #555;
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 1rem;
 }
 
-.about-image img {
+.aboutIntro-image img {
   max-width: 600px;
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 255, 247, 0.08);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-.about-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.aboutIntro-image img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 40px rgba(0, 255, 247, 0.15);
+}
+
+.aboutIntro-scroll {
+  position: absolute;
+  left: -14rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
 }
 
 @media (min-width: 768px) {
-  .about-content {
+  .aboutIntro-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .about-text {
+  .aboutIntro-text {
     padding-right: 2rem;
   }
 }
@@ -86,3 +98,4 @@
     filter: blur(0);
   }
 }
+

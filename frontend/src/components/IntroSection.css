@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Questrial&display=swap');
+
 
 .intro-section {
   background-color: #f3f3f3; /* gris claro personalizado */
@@ -15,7 +15,7 @@
 }
 
 .intro-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -24,31 +24,9 @@
 }
 
 .intro-subtitle {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #444;
 }
 
-/* Utiliza el estilo global de botón .btn ya usado en Hero y otros */
-.btn1 {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  padding: 0.8rem 2rem;
-  background-color: transparent;
-  color: #fff; /* texto negro */
-  border: 1px solid #fff; /* borde negro */
-  background-color: #111;
-  border-radius: 0; /* sin bordes redondeados */
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn1:hover {
-  background-color: #fff;
-  color: #222;
-  border: 1px solid #111;
-}
