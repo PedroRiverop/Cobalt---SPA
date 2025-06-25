@@ -1,4 +1,4 @@
-.scroll-horizontal-container {
+.scroll-horizontal-container-white {
   position: absolute;
   top: 50%;
   left: 1.5rem;
@@ -7,10 +7,10 @@
   cursor: pointer;
 }
 
-.scroll-horizontal-circle {
+.scroll-horizontal-circle-white {
   width: 60px;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -20,11 +20,11 @@
   overflow: visible;
 }
 
-.scroll-horizontal-container.hovered .scroll-horizontal-circle {
+.scroll-horizontal-container-white.hovered .scroll-horizontal-circle-white {
   transform: scale(0.92);
 }
 
-.scroll-horizontal-arrow {
+.scroll-horizontal-arrow-white {
   width: 100px;
   height: 20px;
   position: absolute;
@@ -34,6 +34,6 @@
   transition: left 0.3s ease;
 }
 
-.scroll-horizontal-container.hovered .scroll-horizontal-arrow {
+.scroll-horizontal-container-white.hovered .scroll-horizontal-arrow-white {
   left: -19px;
 }
