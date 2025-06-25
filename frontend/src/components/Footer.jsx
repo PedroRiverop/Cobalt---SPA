@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Instagram, Mail, Send } from 'lucide-react';
-import logo from '../assets/logo.avif';
+import logo from '../assets/homeAssets/logoCobalt.webp';
 
 function Footer() {
   return (

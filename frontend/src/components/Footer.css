@@ -33,6 +33,7 @@
   max-width: 600px;
   opacity: 0.5;
   filter: brightness(0.7);
+  padding-right: 2.5rem;
 }
 
 .footer-content {

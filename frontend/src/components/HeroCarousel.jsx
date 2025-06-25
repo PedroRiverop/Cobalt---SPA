@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import './HeroCarousel.css';
-import logo from '../assets/logo.avif';
+import logo from '../assets/homeAssets/logoCobalt.webp';
 import img1 from '../assets/img1.avif';
 import img2 from '../assets/img2.webp';
 import img3 from '../assets/img3.avif';

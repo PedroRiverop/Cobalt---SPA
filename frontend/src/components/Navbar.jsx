@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/logo.avif';
+import logo from '../assets/homeAssets/logoCobalt.webp';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
