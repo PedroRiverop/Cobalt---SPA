@@ -4,7 +4,7 @@ import contactMap from '../assets/map-preview.png';
 
 function Contact() {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact-section" className="contact-section">
       <div className="contact-grid">
         <div className="contact-info">
           <h2>Contact</h2>
@@ -28,7 +28,7 @@ function Contact() {
             </div>
           </div>
 
-          <a href="https://maps.google.com?q=2055+Trade+Center+Way,+Naples,+FL+34109" target="_blank" rel="noopener noreferrer">
+          <a href="https://maps.app.goo.gl/dQovnPQuCSQS1gHh8" target="_blank" rel="noopener noreferrer">
             <img src={contactMap} alt="BT Roofing Location" className="map-preview" />
           </a>
         </div>

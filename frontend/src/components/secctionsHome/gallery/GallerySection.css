@@ -1,0 +1,164 @@
+/* === SECCIÓN GALERÍA PREVIEW === */
+.gallery-preview-section-sec {
+  background: radial-gradient(circle at top left, #1C1F1D, #1f1f1f);
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Título y subtítulo */
+.gallery-section-title-sec {
+  font-family: 'Playfair Display', serif;
+  font-size: 7rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0px;
+  
+}
+
+.gallery-section-subtitle-sec {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+}
+
+/* === SWIPER === */
+.gallery-swiper-sec {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;  
+  position: relative;
+}
+
+.gallery-image-sec {
+  width: 98%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  
+}
+
+.gallery-image-sec:hover {
+  transform: scale(1.03);
+}
+
+/* === FLECHAS === */
+.gallery-arrow-sec {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  font-size: 5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+  margin: 10px 10px 
+}
+
+.gallery-arrow-sec:hover {
+  opacity: 1;
+}
+
+.gallery-prev-sec {
+  left: -0.9rem;
+}
+
+.gallery-next-sec {
+  right: -0.9rem;
+}
+
+/* CTA debajo del carrusel */
+.gallery-cta-sec {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  
+}
+.gallery-link{
+  text-decoration: none;
+}
+
+.gallery-cta-text-sec {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+.gallery-cta-sec:hover .scroll-horizontal-circle-white {
+transform: scale(0.92);
+}
+.gallery-cta-sec:hover .scroll-horizontal-arrow-white {
+left: -19px;
+}
+
+/* Párrafo introductorio */
+.gallery-intro-text-sec {
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* === TARJETAS TILTED === */
+.service-split-sec {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-tilted-card-sec {
+  background: linear-gradient(135deg, #1a1a1a, #222);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-tilted-card-sec:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 0 20px rgb(251, 251, 251);
+}
+
+.service-tilted-card-sec h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-tilted-card-sec p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .gallery-image {
+    height: 200px;
+  }
+
+  .gallery-arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,118 @@
+
+
+.aboutIntro-section {
+  position: relative;
+  background: white;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  
+}
+
+.aboutIntro-overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.aboutIntro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  filter: blur(4px);
+  animation: fadeSlideIn 1.2s ease-out 0.3s forwards;
+}
+
+.aboutIntro-text {
+  max-width: 600px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #444;
+}
+
+.aboutIntro-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.aboutIntro-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.image-reveal-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.bw-image {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%);
+  border-radius: 12px;
+}
+
+.color-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  clip-path: circle(0px at 0px 0px);
+  transition: clip-path 0.1s ease;
+  border-radius: 12px;
+}
+
+
+.aboutIntro-scroll {
+  position: absolute;
+  left: -14rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  color: #111;
+}
+
+@media (min-width: 768px) {
+  .aboutIntro-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .aboutIntro-text {
+    padding-right: 2rem;
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.98);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+

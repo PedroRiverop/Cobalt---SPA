@@ -1,0 +1,38 @@
+.scroll-indicator-container {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.scroll-circle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+  overflow: visible;
+}
+
+.scroll-indicator-container.hovered .scroll-circle {
+  transform: scale(0.92);
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 93px;
+  margin-top: 12px;
+  transition: margin-top 0.3s ease;
+  position: absolute;
+  top: -40px
+}
+
+.scroll-indicator-container.hovered .scroll-arrow {
+  margin-top: 22px;
+}

@@ -5,7 +5,8 @@ import PlainLayout from './layouts/PlainLayout';
 import MainLayout from './layouts/MainLayout';
 import Landing from './views/Hero'; // Hero inicial es toda la landing
 import HomeArizona from './views/HomeArizona';
-import AboutUs from './views/AboutUs';
+import AboutPage from './views/AboutPage';
+import ServicePage from './views/ServicesPage';
 import './App.css'
 {/* import Gallery from './views/Gallery';*/}
 
@@ -22,8 +23,8 @@ function App() {
         {/* Páginas principales: navbar + footer */}
         <Route element={<MainLayout />}>
           <Route path="/arizona" element={<HomeArizona />} />
-         
-          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/aboutPage" element={<AboutPage />} />
+          <Route path="/servicePage" element={<ServicePage />} />
         </Route>
       
         

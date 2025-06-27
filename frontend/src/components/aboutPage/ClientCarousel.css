@@ -1,0 +1,20 @@
+.client-carousel {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.client-logo {
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.client-logo:hover {
+  
+  opacity: 1;
+  transform: scale(1.25);
+}

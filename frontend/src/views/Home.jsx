@@ -1,11 +1,10 @@
 import React from 'react';
-import HeroCarousel from '../components/HeroCarousel';
-import IntroSection from '../components/IntroSection';
-{/*import './Home.css';*/}
-import About from '../components/AboutInro';
-import ServicesGrid from '../components/ServicesGrid';
-import GalleryPreview from '../components/GalleryPreview';
-import GallerySection from '../components/GallerySection';
+import HeroCarousel from '../components/secctionsHome/hero/HeroCarousel';
+import IntroSection from '../components/secctionsHome/intro/IntroSection';
+import About from '../components/secctionsHome/about/AboutInro';
+import ServicesGrid from '../components/secctionsHome/services/ServicesGrid';
+import WhyChooseUs from '../components/secctionsHome/whyUs/WhyChooseUs';
+import GallerySection from '../components/secctionsHome/gallery/GallerySection';
 import Contact from '../components/Contact';
 
 function Home( {estado}) {
@@ -13,9 +12,11 @@ function Home( {estado}) {
     <>
       <HeroCarousel estado={estado} />
       <IntroSection estado={estado}/>
+      
       <About estado={estado}/>
+      <WhyChooseUs estado={estado}/>
       <ServicesGrid estado={estado}/>
-      <GalleryPreview estado={estado}/>
+      
       <GallerySection estado={estado}/>
       <Contact />
     </>
