@@ -1,5 +1,5 @@
 // src/data/servicesData.js
-import React from 'react';
+
 import kitchenImg from '../assets/home/gallery7.jpg';
 import electricalImg from '../assets/services/serv1.webp';
 import janitorialImg from '../assets/services/serv3.webp';
