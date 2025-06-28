@@ -1,3 +1,5 @@
+import React from 'react';
+
 
 import img1 from '../assets/home/gallery1.jpg';
 import img2 from '../assets/home/gallery2.jpg';

@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 const servicesData = [
   {
     title: "Facilities Engineering",
