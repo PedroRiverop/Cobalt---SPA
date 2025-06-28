@@ -39,7 +39,7 @@ useEffect(() => {
   </div>
 )}
 
-      <nav className={`side-menu-nav ${open ? 'visible' : ''}`}>
+      <nav className={`side-menu-navx ${open ? 'visible' : ''}`}>
         <ul>
           <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
           <li><Link to="/aboutPage" onClick={toggleMenu}>About</Link></li>

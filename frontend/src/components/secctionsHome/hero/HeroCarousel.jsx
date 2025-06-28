@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import './HeroCarousel.css';
-import logo from '../../../assets/homeAssets/logoCobalt.webp';
+import logo from '../../../assets/homeAssets/logoCobalt.png';
 import ScrollIndicator from '../../buttons/ScrollIndicator';
 import { motion } from 'framer-motion';
 

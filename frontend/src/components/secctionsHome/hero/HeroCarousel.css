@@ -52,7 +52,7 @@
   top: 2rem;
   left: 2.5rem;
   z-index: 5;
-  max-height: 180px;
+  height: 70px;
   cursor: pointer;
   opacity: 0;
   animation: fadeInTop 1.2s ease forwards;
@@ -233,7 +233,7 @@
   .hero-carousel-logo {
     top: 1rem;
     left: 1rem;
-    max-height: 100px;
+    max-height: 150px;
   }
 
   .hero-carousel-text {
@@ -253,7 +253,7 @@
     max-width: 100%;
     border: none;
     word-break: break-word; 
-    
+
   }
 
   .custom-arrow {
