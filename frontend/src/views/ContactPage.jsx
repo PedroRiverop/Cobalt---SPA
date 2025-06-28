@@ -1,22 +1,25 @@
 import React from 'react';
 import './ContactPage.css';
 import { motion } from 'framer-motion';
-import ButtonIndicator from '../components/buttons/ButtonIndicator';
+import ButtonIndicatorWhite from '../components//buttons/ButtonIndicatorWhite';
 import contactImage from '../assets/contactPage/building-side.jpg';
 import mapImage from '../assets/map-preview.png';
+import { EnvelopeSimple, Phone } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 
 function ContactPage() {
   return (
-    <div className="contact-page">
-      {/* Left image */}
-      <div className="contact-image-container">
-        <img src={contactImage} alt="Cobalt Office" className="contact-image" />
+    <div className="cp-wrapper">
+      {/* Left Image */}
+      <div className="cp-image-container">
+        <img src={contactImage} alt="Cobalt Office" className="cp-image" />
+        <div className="cp-image-overlay" />
       </div>
 
-      {/* Right content */}
-      <div className="contact-content">
+      {/* Right Content */}
+      <div className="cp-content">
         <motion.h1
-          className="contact-title"
+          className="cp-title"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -25,7 +28,7 @@ function ContactPage() {
         </motion.h1>
 
         <motion.p
-          className="contact-subtitle"
+          className="cp-subtitle"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
@@ -33,34 +36,42 @@ function ContactPage() {
           Whether it’s a question, a collaboration, or a new beginning — we’re here to talk.
         </motion.p>
 
-        <div className="contact-block">
-          {/* Info */}
-          <div className="contact-info">
-            <p>Email: info@cobaltservices.com</p>
-            <p>Phone: (239) 555-1234</p>
-            <p>Instagram: @cobaltservices</p>
-          </div>
+        <div className="cp-contact-block">
 
-          {/* Form */}
-          <form className="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
+          <form className="cp-form">
+            <div className="cp-form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
             <textarea name="message" placeholder="Your Message" rows="5" required />
             <button type="submit">Send Message</button>
           </form>
         </div>
 
-        {/* Google Maps */}
-        <div className="google-maps-container">
-          <a href="https://maps.google.com/?q=Ft.+Lauderdale+Florida" target="_blank" rel="noreferrer">
-            <img src={mapImage} alt="Cobalt on Google Maps" />
+        <div className="cp-map-container">
+          <div className="c-contact-info">
+            <div className="c-contact-item">
+              <Phone size={20} weight="duotone" />
+              <span> (800) 431-9177 </span>
+            </div>
+            <div className="c-contact-item">
+              <EnvelopeSimple size={20} weight="duotone" />
+              <span> info@cobaltcommercialservices.com </span>
+            </div>
+          </div>
+          
+          <a href="https://maps.app.goo.gl/dQovnPQuCSQS1gHh8" target="_blank" rel="noreferrer">
+            <img src={mapImage} alt="Cobalt Google Maps Location" />
           </a>
         </div>
 
         {/* CTA */}
-        <div className="contact-cta">
-          <ButtonIndicator to="/services" />
-          <span className="cta-text">Discover our full service range</span>
+        <div className="cp-cta">
+          <ButtonIndicatorWhite to="/servicePage" />
+          <Link className='about-link-cta' to="/servicePage">
+            <span className="cp-cta-text">Discover our full service range</span>
+          </Link>
+          
         </div>
       </div>
     </div>

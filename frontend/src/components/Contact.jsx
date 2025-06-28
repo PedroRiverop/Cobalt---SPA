@@ -15,20 +15,20 @@ function Contact() {
             <div className="contact-icons-row">
               <span className="contact-item">
                 <i className="fas fa-phone"></i>
-                <span>239-302-3999</span>
+                <span>(800) 431-9177</span>
               </span>
               <span className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <span>info@btroofingfl.com</span>
+                <span>info@cobaltcommercialservices.com</span>
               </span>
               <span className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
-                <span>2055 Trade Center Way, Naples, FL 34109</span>
+                <span>12066 SW 117th Ct Miami, FL 33186</span>
               </span>
             </div>
           </div>
 
-          <a href="https://maps.app.goo.gl/dQovnPQuCSQS1gHh8" target="_blank" rel="noopener noreferrer">
+          <a href="cc" target="_blank" rel="noopener noreferrer">
             <img src={contactMap} alt="BT Roofing Location" className="map-preview" />
           </a>
         </div>

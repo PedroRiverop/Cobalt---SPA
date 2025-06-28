@@ -3,12 +3,19 @@ import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 import './HeroCarousel.css';
 import logo from '../../../assets/homeAssets/logoCobalt.webp';
-import img1 from '../../../assets/home/hero1.jpg';
-import img2 from '../../../assets/home/hero2.jpg';
-import img3 from '../../../assets/home/hero3.jpg';
-import img4 from '../../../assets/home/hero4.jpg';
 import ScrollIndicator from '../../buttons/ScrollIndicator';
 import { motion } from 'framer-motion';
+
+// Import images for each state
+import arizona1 from '../../../assets/home/arizona/hero1.jpg';
+import arizona2 from '../../../assets/home/arizona/hero2.jpg';
+import arizona3 from '../../../assets/home/arizona/hero3.jpg';
+import arizona4 from '../../../assets/home/arizona/hero4.jpg';
+
+import arkansas1 from '../../../assets/home/arkansas/hero1.jpg';
+import arkansas2 from '../../../assets/home/arkansas/hero2.jpg';
+import arkansas3 from '../../../assets/home/arkansas/hero3.jpg';
+import arkansas4 from '../../../assets/home/arkansas/hero4.jpg';
 
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow next" onClick={onClick}>›</div>
@@ -18,7 +25,7 @@ const PrevArrow = ({ onClick }) => (
   <div className="custom-arrow prev" onClick={onClick}>‹</div>
 );
 
-function HeroCarousel() {
+function HeroCarousel({ estado }) {
   const navigate = useNavigate();
 
   const settings = {
@@ -36,7 +43,18 @@ function HeroCarousel() {
     prevArrow: <PrevArrow />
   };
 
-  const sentence = "Your Trusted Partner for Commercial and Residential Solutions in Arizona";
+  const dataPorEstado = {
+    arizona: {
+      sentence: 'Your Trusted Partner for Commercial and Residential Solutions in Arizona',
+      images: [arizona1, arizona2, arizona3, arizona4]
+    },
+    arkansas: {
+      sentence: 'Arkansas’s Go-To Partner for Residential & Commercial Solutions',
+      images: [arkansas1, arkansas2, arkansas3, arkansas4]
+    }
+  };
+
+  const { sentence, images } = dataPorEstado[estado] || dataPorEstado.arizona;
 
   return (
     <div className="hero-carousel">
@@ -71,7 +89,7 @@ function HeroCarousel() {
       </div>
 
       <Slider {...settings}>
-        {[img1, img2, img3, img4].map((img, index) => (
+        {images.map((img, index) => (
           <div key={index} className="carousel-slide">
             <img src={img} alt={`Slide ${index + 1}`} className="carousel-image" />
           </div>

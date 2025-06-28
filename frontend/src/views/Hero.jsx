@@ -52,7 +52,7 @@ function Hero() {
         <img src={logo} alt="Cobalt Logo" className="logo" />
         <div className="buttons">
             <button className="btn" onClick={() => navigate('/arizona')}>Arizona</button>
-            <button className="btn" onClick={() => navigate('/gallery')}>Arkanzas</button>
+            <button className="btn" onClick={() => navigate('/arkansas')}>Arkanzas</button>
             
         </div>
         <div className= 'btn-locations'>

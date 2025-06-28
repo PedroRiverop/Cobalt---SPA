@@ -86,9 +86,9 @@ function GalleryPreview() {
       </Swiper>
 
       <div className="gallery-cta-sec">
-        <ButtonIndicatorWhite to="/gallery" />
+        <ButtonIndicatorWhite to="/galleryPage" />
        
-          <Link className='gallery-link' to="/gallery">
+          <Link className='gallery-link' to="/galleryPage">
           <span className="gallery-cta-text-sec">
             
             Discover Our Gallery
