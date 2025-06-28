@@ -2,7 +2,7 @@ import React from 'react';
 import './ServicesPage.css';
 import servicesData from '../data/servicesDataPage';
 import { motion } from 'framer-motion';
-import ButtonIndicator from '../components/buttons/ButtonIndicator';
+import ButtonIndicatorWhite from '../components/buttons/ButtonIndicatorWhite';
 import heroImage from '../assets/aboutPage/about-hero.jpg'; // Cambiá esta ruta por la correcta si la imagen está en otra carpeta
 
 
@@ -64,14 +64,15 @@ function ServicesSection() {
 
       {/* Why Choose Us Section */}
       <section className="why-choose-section">
-        <h2 className="why-choose-text">Craftsmanship. Commitment. Cobalt.</h2>
-      </section>
+        <h2 className="why-choose-text">Craftsmanship - Commitment COBALT</h2>
 
-      {/* Final CTA */}
+        {/* Final CTA */}
       <div className="services-cta">
-        <ButtonIndicator to="/contact" />
+        <ButtonIndicatorWhite to="/contact" />
         <span className="cta-text">Let’s Build Something Together</span>
       </div>
+      </section>
+
     </div>
   );
 }

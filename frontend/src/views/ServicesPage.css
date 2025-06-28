@@ -3,6 +3,7 @@
   width: 100%;
   height: 80vh;
   overflow: hidden;
+  
 }
 
 .hero-image-wrapper {
@@ -102,7 +103,7 @@
 .service-itemx {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   position: relative;
 }
 
@@ -187,11 +188,10 @@
 
 /* === Why Choose Us Section === */
 .why-choose-section {
-  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  background:   #2C302D;
   padding: 6rem 2rem 4rem;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+ 
 }
 
 .why-choose-text {
@@ -208,26 +208,30 @@
 .why-choose-text::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 160px;
   height: 2px;
-  margin: 1.5rem auto 0;
-  background-color: #00FFF7;
+  margin: 1rem auto 1.5rem;
+  background-color: #00bfff;
   opacity: 0.4;
   border-radius: 10px;
 }
 
 /* === Final CTA === */
 .services-cta {
-  background-color: #111;
-  padding: 4rem 2rem 6rem;
-  text-align: center;
+ 
+  position: relative;
+  display:flex;
+  justify-content: center;
+  padding-left: 25rem;
+  
 }
 
 .services-cta .cta-text {
   display: block;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-top: 1.2rem;
-  font-size: 1.1rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
   color: #aaa;
   opacity: 0.9;
   letter-spacing: 1px;

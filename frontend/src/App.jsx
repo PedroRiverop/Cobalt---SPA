@@ -7,6 +7,7 @@ import Landing from './views/Hero'; // Hero inicial es toda la landing
 import HomeArizona from './views/HomeArizona';
 import AboutPage from './views/AboutPage';
 import ServicePage from './views/ServicesPage';
+import GalleryPage from './views/GalleryPage';
 import './App.css'
 {/* import Gallery from './views/Gallery';*/}
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/arizona" element={<HomeArizona />} />
           <Route path="/aboutPage" element={<AboutPage />} />
           <Route path="/servicePage" element={<ServicePage />} />
+          <Route path="/galleryPage" element={<GalleryPage />} />
         </Route>
       
         

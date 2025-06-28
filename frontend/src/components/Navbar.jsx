@@ -23,7 +23,7 @@ function Navbar() {
           <li><Link to="/arizona">Home</Link></li>
           <li><Link to="/aboutPage">About</Link></li>
           <li><Link to="/servicePage">Services</Link></li>
-          <li><Link to="#gallery">Gallery</Link></li>
+          <li><Link to="/galleryPage">Gallery</Link></li>
           <li><Link to="#contact">Contact</Link></li>
         </ul>
       </div>
