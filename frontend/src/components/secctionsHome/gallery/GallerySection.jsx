@@ -70,7 +70,7 @@ function GalleryPreview() {
 
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={30}
+        spaceBetween={0}
         slidesPerView={3}
         navigation={{ nextEl: '.gallery-next', prevEl: '.gallery-prev' }}
         pagination={{ clickable: true }}

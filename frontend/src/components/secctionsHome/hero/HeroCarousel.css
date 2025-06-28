@@ -228,3 +228,47 @@
 .close-button:hover {
   color: #d4af37; /* tono dorado mostaza de tu paleta */
 }
+
+@media (max-width: 768px) {
+  .hero-carousel-logo {
+    top: 1rem;
+    left: 1rem;
+    max-height: 100px;
+  }
+
+  .hero-carousel-text {
+    width: 100%;
+    padding: 0 1.5rem;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%); /* SOLO horizontal */
+   
+  }
+
+  .hero-carousel-text h1 {
+    white-space: normal;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 100%;
+    border: none;
+    word-break: break-word; 
+    
+  }
+
+  .custom-arrow {
+    font-size: 2rem;
+    top: 55%;
+  }
+
+  .menu-button {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .carousel-image {
+    object-position: center;
+  }
+}

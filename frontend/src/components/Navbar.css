@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 999;
   transform: translateY(-100%);
@@ -11,36 +10,34 @@
 }
 
 .navbar.visible {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .navbar-logo {
-  max-height: 35px;
+  max-height: 55px;
   width: auto;
-  transform: scale(1.6);
-  
   transition: transform 0.3s ease;
-  will-change: transform;
+  cursor: pointer;
 }
 
 .navbar-logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
@@ -48,9 +45,9 @@
 .navbar-links li a {
   color: white;
   text-decoration: none;
-  font-family: 'Cinzel', serif;
-  font-weight: 450;
-  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
@@ -59,4 +56,13 @@
   color: #f0c27b;
 }
 
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
 
+  .navbar-logo {
+    max-height: 45px;
+  }
+}

@@ -56,7 +56,7 @@ function Hero() {
             
         </div>
         <div className= 'btn-locations'>
-          <button className="btn" onClick={() => navigate('/home')}>More Locations</button>
+          <button className="btn" onClick={() => navigate('/moreLocations')}>More Locations</button>
         </div>
       </div>
     </section>

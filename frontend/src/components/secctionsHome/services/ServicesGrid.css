@@ -2,11 +2,22 @@
 /* MasonryServices.css */
 .masonry-services-section {
   position: relative;
-  background: url('../../../assets/home/servicesSection.jpg') center/cover no-repeat;
   padding: 0rem 2rem;
   color: white;
   
   z-index: 4;
+}
+
+.masonry-services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../assets/home/servicesSection.jpg') center/cover no-repeat;
+  filter: grayscale(100%) brightness(1.2); /* blanco y negro + aclarado */
+  z-index: -1;
 }
 
 .masonry-services-overlay {
@@ -124,4 +135,69 @@
   transform: translateY(-50%);
   z-index: 5;
   color: #111;
+}
+
+
+@media (max-width: 768px) {
+  .masonry-services-title {
+    font-size: 2.5rem;
+    text-align: center;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .masonry-services-section {
+    padding: 2rem 1rem;
+  }
+
+  .masonry-services-overlay {
+    padding: 2rem 1rem;
+    border-radius: 0;
+  }
+
+  .masonry-card {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .masonry-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .masonry-title {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .masonry-description {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .custom-nav-arrow {
+    font-size: 2rem;
+    padding: 0.3rem 0.8rem;
+    top: unset;
+    bottom: -40px;
+    transform: none;
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .custom-prev, .custom-next {
+    left: unset;
+    right: unset;
+  }
+
+  .servicesView-scroll {
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
 }

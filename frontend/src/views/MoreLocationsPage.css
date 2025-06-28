@@ -1,0 +1,123 @@
+/* ===== General ===== */
+.more-locations-page {
+  background-color: #111;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Hero Carousel ===== */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-carousel-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 50px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.hero-carousel-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.animated-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* ===== Mapa de USA ===== */
+.areas-served {
+  background-color: #0D0D0D;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.areas-image-wrapper {
+  text-align: center;
+  transition: transform 0.4s ease;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.areas-image-wrapper:hover {
+  transform: scale(1.01);
+}
+
+.areas-map {
+  width: 100%;
+  height: auto;
+  display: block;
+ 
+}
+
+.areas-caption {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem 0;
+  background-color: #111;
+  margin: 0;
+}
+
+
+/* ===== Motivation Section ===== */
+.highlight-section {
+  padding: 7rem 2rem 5rem;
+  text-align: center;
+  background: #111;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.motivation-text {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* ===== Espaciado para secciones reutilizadas ===== */
+#intro-section,
+#services-section {
+  padding-top: 5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 1.5rem;
+  }
+
+  .map-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .motivation-text {
+    font-size: 1rem;
+  }
+}

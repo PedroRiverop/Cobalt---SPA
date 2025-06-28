@@ -63,6 +63,7 @@ function HeroCarousel({ estado }) {
       <div className="hero-carousel-text">
         <motion.h1
           className="animated-text"
+          style={{ whiteSpace: 'normal' }}
           initial="hidden"
           animate="visible"
           variants={{

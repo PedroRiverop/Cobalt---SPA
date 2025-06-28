@@ -10,6 +10,7 @@ import AboutPage from './views/AboutPage';
 import ServicePage from './views/ServicesPage';
 import GalleryPage from './views/GalleryPage';
 import ContactPage from './views/ContactPage';
+import MoreLocationsPage from './views/MoreLocationsPage';
 import './App.css'
 {/* import Gallery from './views/Gallery';*/}
 
@@ -27,6 +28,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/arizona" element={<HomeArizona />} />
           <Route path="/arkansas" element={<HomeArkansas />} />
+          <Route path="/moreLocations" element={<MoreLocationsPage />} />
           <Route path="/aboutPage" element={<AboutPage />} />
           <Route path="/servicePage" element={<ServicePage />} />
           <Route path="/galleryPage" element={<GalleryPage />} />
