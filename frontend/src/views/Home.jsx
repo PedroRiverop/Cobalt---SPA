@@ -12,11 +12,9 @@ function Home( {estado}) {
     <>
       <HeroCarousel estado={estado} />
       <IntroSection estado={estado}/>
-      
       <About estado={estado}/>
       <WhyChooseUs estado={estado}/>
       <ServicesGrid estado={estado}/>
-      
       <GallerySection estado={estado}/>
       <Contact />
     </>

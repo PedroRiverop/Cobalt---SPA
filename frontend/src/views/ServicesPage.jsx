@@ -4,7 +4,7 @@ import servicesData from '../data/servicesDataPage';
 import { motion } from 'framer-motion';
 import ButtonIndicatorWhite from '../components/buttons/ButtonIndicatorWhite';
 import heroImage from '../assets/aboutPage/about-hero.jpg'; // Cambiá esta ruta por la correcta si la imagen está en otra carpeta
-
+import { Link } from 'react-router-dom';
 
 function ServicesSection() {
   return (
@@ -68,8 +68,11 @@ function ServicesSection() {
 
         {/* Final CTA */}
       <div className="services-cta">
-        <ButtonIndicatorWhite to="/contact" />
-        <span className="cta-text">Let’s Build Something Together</span>
+        <ButtonIndicatorWhite to="/contactPage" />
+         <Link className='about-link-cta' to="/contactPage">
+            <span className="cta-text">Let’s Build Something Together</span>
+         </Link>
+        
       </div>
       </section>
 

@@ -222,18 +222,27 @@
   position: relative;
   display:flex;
   justify-content: center;
-  padding-left: 25rem;
+  margin: 0 auto;
+  width: 450px;
   
 }
 
-.services-cta .cta-text {
+ .cta-text {
   display: block;
   font-family: 'Inter', sans-serif;
   margin-top: 1.2rem;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
   font-size: 1.5rem;
   color: #aaa;
   opacity: 0.9;
   letter-spacing: 1px;
+  
 }
 
+.services-cta:hover .scroll-horizontal-circle-white {
+transform: scale(0.92);
+color: #ccc;
+}
+.services-cta:hover .scroll-horizontal-arrow-white {
+left: -19px;
+}

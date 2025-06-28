@@ -24,7 +24,7 @@ function Navbar() {
           <li><Link to="/aboutPage">About</Link></li>
           <li><Link to="/servicePage">Services</Link></li>
           <li><Link to="/galleryPage">Gallery</Link></li>
-          <li><Link to="#contact">Contact</Link></li>
+          <li><Link to="/contactPage">Contact</Link></li>
         </ul>
       </div>
     </nav>

@@ -91,7 +91,7 @@ function GalleryPreview() {
           <Link className='gallery-link' to="/gallery">
           <span className="gallery-cta-text-sec">
             
-            View full gallery
+            Discover Our Gallery
             
             </span>
             </Link>

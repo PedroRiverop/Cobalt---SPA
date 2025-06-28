@@ -6,41 +6,41 @@
   font-family: 'Inter', sans-serif;
 }
 
-.gallery-hero {
+.gallery-page-hero {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   overflow: hidden;
   color: white;
 }
-.gallery-hero-slider {
+.gallery-page-hero-slider {
   height: 100%;
 }
 
-.hero-slide {
+.hero-slide-gellery {
   position: relative;
   height: 100%;
 }
 
-.hero-slide img {
+.hero-slide-gallery img {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover;
   filter: brightness(0.6); /* Oscurecimiento sutil */
   pointer-events: none;
 }
 
 
-.gallery-title {
+.gallery-title-gallery {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
   color: white;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
 }
 
-.gallery-subtitle {
+.gallery-subtitle-gallery {
   font-size: 1.5rem;
   max-width: 720px;
   margin: 0 auto;
@@ -48,7 +48,7 @@
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text-overlay {
+.hero-text-overlay-gallery {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,28 +60,30 @@
 
 
 
-.gallery-intro-section {
+.gallery-page-intro-section {
   padding: 3rem 2rem;
   text-align: center;
   color: #ccc;
   font-family: 'Inter', sans-serif;
 }
 
-.gallery-intro-text {
-  font-size: 1.3rem;
+.gallery-page-intro-text {
+  font-size: 1.5rem;
   max-width: 1000px;
   margin: 0 auto 2rem;
   line-height: 1.6;
   color: #ddd;
 }
 
-.gallery-intro-cta {
+.gallery-page-intro-cta {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  width: 400px;
+  margin: 0 auto 35px;
 }
 
 .see-more-link {
@@ -93,9 +95,16 @@
   text-decoration: none;
 }
 
-.see-more-link:hover {
-  color: #ffcc00; /* mostaza elegante */
-  border-color: #ffcc00;
+
+.gallery-page-intro-cta:hover .scroll-horizontal-circle-white {
+transform: scale(0.92);
+color: #ccc;
+}
+.gallery-page-intro-cta:hover .scroll-horizontal-arrow-white {
+left: -19px;
+}
+
+.about-link-cta{
   text-decoration: none;
 }
 
@@ -111,13 +120,13 @@
 
 
 
-.gallery-grid {
+.gallery-page-grid {
   columns: 3 300px;
   column-gap: 1.5rem;
   padding: 2rem;
 }
 
-.gallery-item {
+.gallery-page-item {
   break-inside: avoid;
   margin-bottom: 1.5rem;
   overflow: hidden;
@@ -126,14 +135,14 @@
   transition: transform 0.3s ease;
 }
 
-.gallery-item img {
+.gallery-page-item img {
   width: 100%;
   display: block;
   border-radius: 12px;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.gallery-item:hover img {
+.gallery-item-page:hover img {
   filter: grayscale(70%) blur(1px);
   transform: scale(1.03);
 }

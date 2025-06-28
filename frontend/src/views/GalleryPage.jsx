@@ -3,6 +3,7 @@ import './GalleryPage.css';
 import galleryImages from '../data/galleryImages'; // array con rutas de las imágenes
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import hero1 from '../assets/galleryPage/hero1.jpg';
 import hero2 from '../assets/galleryPage/hero2.jpg';
@@ -27,20 +28,20 @@ function GalleryPage() {
   
   return (
     <div className="gallery-page">
-      <section className="gallery-hero">
-        <div className="gallery-hero">
-      <Slider {...settings} className="gallery-hero-slider">
+      <section className="gallery-page-hero">
+        <div className="gallery-page-hero">
+      <Slider {...settings} className="gallery-page-hero-slider">
         {galleryHeroImages.map((img, index) => (
-          <div key={index} className="hero-slide">
+          <div key={index} className="hero-slide-gallery">
             <img src={img} alt={`Hero ${index + 1}`} />
             <div />
           </div>
         ))}
       </Slider>
 
-      <div className="hero-text-overlay">
+      <div className="hero-text-overlay-gallery">
         <motion.h1
-          className="gallery-title"
+          className="gallery-title-gallery"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -48,7 +49,7 @@ function GalleryPage() {
           Our Work Speaks for Itself
         </motion.h1>
         <motion.p
-          className="gallery-subtitle"
+          className="gallery-subtitle-gallery"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
@@ -60,27 +61,30 @@ function GalleryPage() {
       </section>
 
       {/* Gallery Intro Section */}
-    <section className="gallery-intro-section">
-      <p className="gallery-intro-text">
+    <section className="gallery-page-intro-section">
+      <p className="gallery-page-intro-text">
         At Cobalt, every project is a testament to our unwavering commitment to craftsmanship, precision, and client-focused solutions.
 We don’t just build structures — we build trust, partnerships, and spaces that endure. With every detail, we aim to exceed expectations, creating outcomes that are as functional as they are inspiring. Our legacy is shaped by those we serve, and every image you see is a reflection of that promise.
       </p>
 
-      <div className="gallery-intro-cta">
-        <ButtonIndicatorWhite to="/contact" />
-        <span className="see-more-link" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          See more about our approach
-        </span>
+      <div className="gallery-page-intro-cta">
+        <ButtonIndicatorWhite to="/aboutPage" />
+        <Link className='about-link-cta' to="/aboutPage">
+          <span className="see-more-link" >
+            See more about our approach
+          </span>
+        </Link>
+        
       </div>
 
       <div className="gallery-divider-line"></div>
     </section>
 
 
-      <section className="gallery-grid">
+      <section className="gallery-page-grid">
         {galleryImages.map((src, index) => (
           <motion.div
-            className="gallery-item"
+            className="gallery-page-item"
             key={index}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
