@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-   "compilerOptions": {
-    "jsx": "react-jsx"
+  esbuild: {
+    jsx: 'automatic' // 👈 CLAVE
   }
-})
+});
